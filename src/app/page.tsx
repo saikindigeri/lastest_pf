@@ -28,7 +28,7 @@ export default function Home() {
         </div>
 
         {/* 3D Icon Above the Name */}
-        <Image
+        <Image  
           quality={100}
           priority
           width={200}
