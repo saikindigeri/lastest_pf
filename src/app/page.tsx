@@ -17,18 +17,27 @@ export default function Home() {
     <>
       <section
         className={`relative flex flex-col justify-center items-center text-center transition-all duration-300 space-y-6 p-6 min-h-screen
-    ${isDarkMode ? "bg-black text-white" : "bg-white text-black"}
+ 
   `}
       >
         {/* Background Glow Effects */}
         <div className="absolute inset-0 -z-10 overflow-hidden">
-          <div className="absolute top-1/3 left-1/4 w-[300px] h-[300px] rounded-full bg-purple-600 blur-[150px] opacity-40"></div>
-          <div className="absolute top-1/2 right-1/4 w-[250px] h-[250px] rounded-full bg-blue-500 blur-[120px] opacity-50"></div>
-          <div className="absolute bottom-1/4 left-1/3 w-[200px] h-[200px] rounded-full bg-yellow-500 blur-[100px] opacity-40"></div>
-        </div>
+  {/* Soft Purple Glow (Top-Left) */}
+  <div className="absolute top-1/5 left-1/4 w-[320px] h-[320px] rounded-full 
+                  bg-purple-600 blur-[200px] opacity-30"></div>
+
+  {/* Soft Blue Glow (Top-Right) */}
+  <div className="absolute top-1/3 right-1/4 w-[270px] h-[270px] rounded-full 
+                  bg-blue-500 blur-[180px] opacity-30"></div>
+
+  {/* Soft Yellow Glow (Bottom-Left) */}
+  <div className="absolute bottom-1/4 left-1/4 w-[220px] h-[220px] rounded-full 
+                  bg-yellow-500 blur-[160px] opacity-25"></div>
+</div>
+
 
         {/* 3D Icon Above the Name */}
-        <Image  
+        <Image
           quality={100}
           priority
           width={200}
@@ -45,14 +54,16 @@ export default function Home() {
         >
           Hi, Im <br />
           <span
-            className="relative text-transparent bg-clip-text bg-gradient-to-r 
-        from-yellow-500 via-orange-500 to-purple-700 dark:from-pink-500 dark:via-red-500 dark:to-yellow-500 
-        font-extrabold tracking-wide px-4 py-1 border-4 border-transparent rounded-lg 
-        before:absolute before:-inset-1 before:bg-gradient-to-r before:from-yellow-500 before:via-orange-500 before:to-purple-600 
-        dark:before:from-pink-500 dark:before:via-red-500 dark:before:to-yellow-500 before:rounded-lg before:blur-md before:-z-10"
-          >
-            Sai Kumar
-          </span>
+  className="relative text-transparent bg-clip-text bg-gradient-to-r 
+  from-yellow-500 via-orange-500 to-purple-700 dark:from-pink-500 dark:via-red-500 dark:to-yellow-500 
+  font-extrabold tracking-wide px-6 py-2 border-4 border-transparent 
+  [text-shadow:0px_0px_6px_rgba(255,165,0,0.7), 0px_0px_10px_rgba(255,165,0,0.5)] 
+  dark:[text-shadow:0px_0px_6px_rgba(255,105,180,0.7), 0px_0px_12px_rgba(255,105,180,0.5)]"
+>
+  Sai Kumar
+</span>
+
+
         </h1>
 
         {/* Subtitle */}

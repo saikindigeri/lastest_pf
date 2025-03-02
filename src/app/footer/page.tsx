@@ -1,16 +1,12 @@
 "use client";
 
-import { useContext } from "react";
-import { ThemeContext } from "../context/ThemeContext";
 
 export default function Footer() {
-  const { isDarkMode } = useContext(ThemeContext);
+
 
   return (
     <footer
-      className={`py-6 text-center text-sm transition-all duration-300 ${
-        isDarkMode ? "bg-black text-white" : "bg-white text-black"
-      }`}
+      className={`py-6 text-center text-sm transition-all duration-300 `}
     >
       <p className="text-lg font-medium">
         <span className="font-serif tracking-wide">Designed & Developed by</span>{" "}

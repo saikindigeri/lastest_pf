@@ -53,9 +53,7 @@ const ContactForm = () => {
   return (
     <section
       id="contact"
-      className={`py-20 text-center transition-all duration-300 ${
-        isDarkMode ? "bg-black text-white" : "bg-white text-black"
-      }`}
+      className={`py-20 text-center transition-all duration-300 `}
     >
       <h2
         className={`text-3xl md:text-3xl font-bold tracking-tight mb-10 ${bricolage_grotesque} relative`}

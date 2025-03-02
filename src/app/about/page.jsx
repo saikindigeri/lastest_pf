@@ -11,7 +11,7 @@ export default function About() {
   return (
     <div
       className={`min-h-screen w-full flex flex-col items-center justify-center px-6 md:px-10 py-16 transition-all duration-300 
-        ${isDarkMode ? "bg-black text-white" : "bg-white text-black"}`}
+      `}
     >
          <h2 className={`${bricolage_grotesque} text-3xl font-bold mb-6`}>Education 🎓</h2>
       {/* Intro Section */}

@@ -57,9 +57,7 @@ export default function ProjectsSection() {
   return (
     <section
     id="projects"
-    className={`py-12 text-center transition-all duration-300 overflow-hidden ${
-      isDarkMode ? "bg-black text-white" : "bg-white text-black"
-    }`}
+    className={`py-12 text-center transition-all duration-300 overflow-hidden`}
   >
     <h2 className={`${bricolage_grotesque} text-3xl font-bold mb-6`}>
       Projects

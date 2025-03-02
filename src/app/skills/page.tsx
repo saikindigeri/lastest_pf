@@ -1,7 +1,5 @@
 "use client";
 
-import { useContext } from "react";
-import { ThemeContext } from "../context/ThemeContext";
 import { motion } from "framer-motion";
 import { bricolage_grotesque } from "@/app/utils/font";
 import { FaJs, FaReact, FaNodeJs, FaPython, FaJava } from "react-icons/fa";
@@ -23,12 +21,12 @@ const skills = [
 ];
 
 export default function Skills() {
-  const { isDarkMode } = useContext(ThemeContext);
+
 
   return (
     <div
       className={`min-h-screen w-full flex flex-col items-center justify-center px-8 py-20 transition-all duration-300 
-        ${isDarkMode ? "bg-black text-white" : "bg-white text-black"}`}
+   `}
     >
       {/* Title */}
       <motion.h2
