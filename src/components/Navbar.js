@@ -2,8 +2,8 @@
 
 import { useContext } from "react";
 import { ThemeContext } from "../app/context/ThemeContext";
-import { Code, CodeXml, LaptopMinimal, MoonStar, Sun } from "lucide-react";
-import { FaGithub, FaLinkedin, FaTwitter, FaHome, FaUser, FaTools, FaProjectDiagram, FaEnvelope } from "react-icons/fa";
+import {  CodeXml, LaptopMinimal, MoonStar, Sun } from "lucide-react";
+import { FaGithub, FaLinkedin, FaTwitter, FaHome, FaUser,   FaEnvelope } from "react-icons/fa";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
