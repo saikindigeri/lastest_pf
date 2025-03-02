@@ -54,15 +54,15 @@ export default function ProjectsSection() {
   const { isDarkMode } = useContext(ThemeContext);
 
   return (
-    <section id="projects" className="py-12 text-center">
+    <section id="projects" className="py-12 text-center ">
       <h2 className={`${bricolage_grotesque} text-3xl font-bold mb-6`}>
         Projects
       </h2>
 
-      <div className="relative w-full">
+      <div className="relative w-full overflow-y-hidden">
         {/* Horizontal scrolling container */}
         <motion.div
-          className="flex gap-4 px-4 md:px-8 overflow-x-auto scrollbar-hide snap-x"
+          className="flex gap-4 px-4 md:px-8 overflow-x-auto scrollbar-hide  snap-x"
           animate={{ x: ["5%", "-25%"] }}
           transition={{ duration: 15, repeat: Infinity, ease: "linear" }}
           whileHover={{ x: 0 }}
