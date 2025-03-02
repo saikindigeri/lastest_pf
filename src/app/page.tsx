@@ -24,7 +24,7 @@ export default function Home() {
         <div className="absolute inset-0 -z-10 overflow-hidden">
   {/* Soft Purple Glow (Top-Left) */}
   <div className="absolute top-1/5 left-1/4 w-[320px] h-[320px] rounded-full 
-                  bg-purple-600 blur-[200px] opacity-30"></div>
+                  bg-purple-600 blur-[150px] opacity-30"></div>
 
   {/* Soft Blue Glow (Top-Right) */}
   <div className="absolute top-1/3 right-1/4 w-[270px] h-[270px] rounded-full 
@@ -32,7 +32,7 @@ export default function Home() {
 
   {/* Soft Yellow Glow (Bottom-Left) */}
   <div className="absolute bottom-1/4 left-1/4 w-[220px] h-[220px] rounded-full 
-                  bg-yellow-500 blur-[160px] opacity-25"></div>
+                  bg-yellow-500 blur-[150px] opacity-25"></div>
 </div>
 
 
