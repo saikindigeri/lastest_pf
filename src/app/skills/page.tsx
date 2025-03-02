@@ -25,7 +25,7 @@ export default function Skills() {
 
   return (
     <div
-      className={`min-h-screen w-full flex flex-col items-center justify-center px-8 py-20 transition-all duration-300 
+      className={` w-full flex flex-col items-center justify-center px-8 py-6 transition-all duration-300 
    `}
     >
       {/* Title */}

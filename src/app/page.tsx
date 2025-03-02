@@ -16,25 +16,30 @@ export default function Home() {
   return (
     <>
       <section
-        className={`relative flex flex-col justify-center items-center text-center transition-all duration-300 space-y-6 p-6 min-h-screen
+        className={`relative flex flex-col justify-center items-center text-center transition-all duration-300 space-y-2 p-6 mb-10
  
   `}
       >
         {/* Background Glow Effects */}
         <div className="absolute inset-0 -z-10 overflow-hidden">
-  {/* Soft Purple Glow (Top-Left) */}
-  <div className="absolute top-1/5 left-1/4 w-[320px] h-[320px] rounded-full 
-                  bg-purple-600 blur-[150px] opacity-30"></div>
+          {/* Soft Purple Glow (Top-Left) */}
+          <div
+            className="absolute top-1/5 left-1/4 w-[320px] h-[320px] rounded-full 
+                  bg-purple-600 blur-[150px] opacity-30"
+          ></div>
 
-  {/* Soft Blue Glow (Top-Right) */}
-  <div className="absolute top-1/3 right-1/4 w-[270px] h-[270px] rounded-full 
-                  bg-blue-500 blur-[180px] opacity-30"></div>
+          {/* Soft Blue Glow (Top-Right) */}
+          <div
+            className="absolute top-1/3 right-1/4 w-[270px] h-[270px] rounded-full 
+                  bg-blue-500 blur-[180px] opacity-30"
+          ></div>
 
-  {/* Soft Yellow Glow (Bottom-Left) */}
-  <div className="absolute bottom-1/4 left-1/4 w-[220px] h-[220px] rounded-full 
-                  bg-yellow-500 blur-[150px] opacity-25"></div>
-</div>
-
+          {/* Soft Yellow Glow (Bottom-Left) */}
+          <div
+            className="absolute bottom-1/4 left-1/4 w-[220px] h-[220px] rounded-full 
+                  bg-yellow-500 blur-[150px] opacity-25"
+          ></div>
+        </div>
 
         {/* 3D Icon Above the Name */}
         <Image
@@ -54,16 +59,14 @@ export default function Home() {
         >
           Hi, Im <br />
           <span
-  className="relative text-transparent bg-clip-text bg-gradient-to-r 
+            className="relative text-transparent bg-clip-text bg-gradient-to-r 
   from-yellow-500 via-orange-500 to-purple-700 dark:from-pink-500 dark:via-red-500 dark:to-yellow-500 
   font-extrabold tracking-wide px-6 py-2 border-4 border-transparent 
   [text-shadow:0px_0px_6px_rgba(255,165,0,0.7), 0px_0px_10px_rgba(255,165,0,0.5)] 
   dark:[text-shadow:0px_0px_6px_rgba(255,105,180,0.7), 0px_0px_12px_rgba(255,105,180,0.5)]"
->
-  Sai Kumar
-</span>
-
-
+          >
+            Sai Kumar
+          </span>
         </h1>
 
         {/* Subtitle */}
@@ -80,17 +83,30 @@ export default function Home() {
         </p>
 
         {/* Call to Action Buttons */}
-        <div className="flex flex-col sm:flex-row items-center gap-4">
+        <div className="flex gap-6">
           {/* Get in Touch Button */}
           <a
             href="/contact"
             className={`px-6 py-3 h-12 w-44 font-semibold flex justify-center items-center rounded-lg relative transition-all duration-300 hover:scale-105
-        ${isDarkMode ? "bg-white text-black" : "bg-black text-white"}
-      `}
+      ${isDarkMode ? "bg-white text-black" : "bg-black text-white"}
+    `}
           >
             Get in touch
             <span className="absolute inset-x-0 -bottom-2 h-1 bg-gradient-to-r from-red-500 via-yellow-500 to-blue-500 rounded-full blur-md opacity-80"></span>
             <span className="absolute -inset-1 rounded-lg bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 blur-lg opacity-20"></span>
+          </a>
+
+          {/* Download Resume Button */}
+          <a
+            href="/sai.pdf" // Replace with the actual resume file link
+            download
+            className={`px-6 py-3 h-12 w-44 font-semibold flex justify-center items-center rounded-lg relative transition-all duration-300 hover:scale-105
+      ${isDarkMode ? "bg-white text-black" : "bg-black text-white"}
+    `}
+          >
+            Resume
+            <span className="absolute inset-x-0 -bottom-2 h-1 bg-gradient-to-r from-green-500 via-teal-500 to-cyan-500 rounded-full blur-md opacity-80"></span>
+            <span className="absolute -inset-1 rounded-lg bg-gradient-to-r from-green-500 via-teal-500 to-cyan-500 blur-lg opacity-20"></span>
           </a>
         </div>
       </section>

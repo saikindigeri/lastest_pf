@@ -10,7 +10,7 @@ export default function About() {
 
   return (
     <div
-      className={`min-h-screen w-full flex flex-col items-center justify-center px-6 md:px-10 py-16 transition-all duration-300 
+      className={` w-full flex flex-col items-center justify-center px-6 md:px-10 py-4 transition-all duration-300 
       `}
     >
          <h2 className={`${bricolage_grotesque} text-3xl font-bold mb-6`}>Education 🎓</h2>
