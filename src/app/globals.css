@@ -6,6 +6,9 @@
   50% { transform: translateY(-10px); }
   100% { transform: translateY(0px); }
 }
+html, body {
+  overflow-x: hidden;
+}
 
 
 :root {
