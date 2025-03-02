@@ -28,7 +28,7 @@ const Navbar = () => {
             {/* Social Links - Shown only on larger screens */}
             <div className="hidden sm:flex items-center gap-4">
                 <NavLink href="https://github.com/saikindigeri" icon={<FaGithub />} text="GitHub" isDarkMode={isDarkMode} />
-                <NavLink href="https://linkedin.com/saikumarkindigeri" icon={<FaLinkedin />} text="LinkedIn" isDarkMode={isDarkMode} />
+                <NavLink href="https://www.linkedin.com/in/saikumarkindigeri" icon={<FaLinkedin />} text="LinkedIn" isDarkMode={isDarkMode} />
                 <NavLink href="https://twitter.com/Devaa_Sai" icon={<FaTwitter />} text="Twitter" isDarkMode={isDarkMode} />
             </div>
 
