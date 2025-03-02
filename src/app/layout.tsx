@@ -16,32 +16,10 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-export const metadata = {
-  title: "Sai Kumar Kindigeri | Full Stack Developer",
-  description: "Portfolio of Sai Kumar Kindigeri",
-  keywords: "Full Stack Developer, Web3, MERN, Blockchain, Portfolio",
-  authors: [{ name: "Sai Kumar Kindigeri", url: "https://sai-seven-sooty.vercel.app" }],
-  openGraph: {
-    title: "Sai Kumar Kindigeri | Portfolio",
-    description: "Portfolio of Sai Kumar Kindigeri - Full Stack & Web3 Developer.",
-    url: "https://sai-seven-sooty.vercel.app",
-    siteName: "Sai Kumar Kindigeri",
-    images: [
-      {
-        url: "iron.png", // Replace with your actual image
-        width: 1200,
-        height: 630,
-        alt: "Sai Portfolio",
-      },
-    ],
-    type: "website",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Sai Kumar Kindigeri | Portfolio",
-    description: "Portfolio of Sai Kumar Kindigeri - Full Stack & Web3 Developer.",
-    images: ["https://yourwebsite.com/og-image.png"], // Replace with your actual image
-  },
+export const metadata:Metadata  = {
+ 
+  title: "Sai Kumar || Full Stack developer",
+  description: "Portfolio of Sai Kumar",
 };
 
 
