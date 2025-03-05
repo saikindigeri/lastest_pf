@@ -59,10 +59,10 @@ export default function ProjectsSection() {
         Projects
       </h2>
 
-      <div className="relative w-full overflow-y-hidden">
+      <div className="relative w-full sm:overflow-x-hidden">
         {/* Horizontal scrolling container */}
         <motion.div
-          className="flex gap-4 px-4 md:px-8 overflow-x-auto scrollbar-hide  snap-x"
+          className="flex gap-4 px-4 md:px-8 sm:overflow-x-auto sm:scrollbar-hide  snap-x"
           animate={{ x: ["5%", "-25%"] }}
           transition={{ duration: 15, repeat: Infinity, ease: "linear" }}
           whileHover={{ x: 0 }}
